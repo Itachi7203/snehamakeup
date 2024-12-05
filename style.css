@@ -1,0 +1,825 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    padding-top: 50px;
+}
+
+header {
+    background: linear-gradient(135deg, #3b1d47, #4e2745, #613440);
+    padding: 20px 0;
+    color: #f8e2cf; /* Soft peach for text to contrast with the dark background */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow for a luxurious feel */
+    font-family: 'Georgia', serif;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #f8e2cf; /* Matches the elegance theme */
+}
+
+/* Navigation */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #f8d7cd; /* Softer tone for links */
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 15px;
+    background: rgba(0, 0, 0, 0.3); /* Subtle transparency for depth */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: #4e2745; /* Highlight with a deeper color from the gradient */
+    color: #f8e2cf;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 2rem;
+    color: #2f2e41;
+    margin-bottom: 20px;
+}
+
+#portfolio p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05); 
+}
+
+/* Footer */
+footer {
+    background: #2c2c2c; /* Dark background to contrast with text */
+    color: #f8e2cf; /* Light color for text to maintain readability */
+    padding: 20px 0; /* Padding around the content */
+    text-align: center; /* Center-align the footer content */
+    position: relative; /* Ensure it stays at the bottom */
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center content */
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem; /* Adjust the font size */
+    font-weight: normal;
+}
+
+footer .socials {
+    margin-top: 10px;
+}
+
+footer .socials a {
+    color: #f8e2cf; /* Light color for the links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Add space between links */
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+footer .socials a:hover {
+    color: #ff9f00; /* Change color on hover */
+}
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    padding-top: 50px;
+}
+
+header {
+    background: linear-gradient(135deg, #3b1d47, #4e2745, #613440);
+    padding: 20px 0;
+    color: #f8e2cf; /* Soft peach for text to contrast with the dark background */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow for a luxurious feel */
+    
+    font-family: 'Georgia', serif;
+}
+
+/* Header Text Styling */
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #f8e2cf; /* Matches the elegance theme */
+}
+
+/* Navigation */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #f8d7cd; /* Softer tone for links */
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 15px;
+    background: rgba(0, 0, 0, 0.3); /* Subtle transparency for depth */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: #4e2745; /* Highlight with a deeper color from the gradient */
+    color: #f8e2cf;
+}
+
+
+header {
+   background-color: #222;
+    color: white;
+    
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f7c6ff;
+}
+
+/* Hero Section */
+#hero {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 80px 20px;
+    color: #fff;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta {
+    background-color: #f7c6ff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #222;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #c39bd3;
+}
+
+/* Services Section */
+#services {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+#services h2 {
+    color: #2c2c2c; /* Dark grey or you can use any dark color */
+    font-size: 2rem; /* Adjust font size as needed */
+    text-align: center; /* Center align the text */
+    font-weight: bold; /* Optional for emphasis */
+    margin-bottom: 30px; /* Add space below the title */
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-item {
+    width: 250px;
+    border: 2px solid #f7c6ff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.service-item:hover .service-image {
+    opacity: 0.8;
+}
+
+.service-item p {
+    background-color: #f7c6ff;
+    padding: 10px;
+    color: #222;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* About Section */
+#about {
+    padding: 80px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.owner-card {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.owner-image-wrapper {
+    width: 200px;
+ 
+}
+/* About Section */
+#about {
+    padding: 80px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.owner-card {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.owner-image-wrapper {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.owner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.owner-details {
+    max-width: 500px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.owner-details h3 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.owner-details p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.owner-details p:first-of-type {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.owner-details a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #f7c6ff;
+    color: #222;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.owner-details a:hover {
+    background-color: #c39bd3;
+}
+/* Contact Section */
+#contact {
+    padding: 80px 20px;
+    background-color: #222; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #d1d1d1;
+}
+
+/* Social Media Links */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.socials a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #f7c6ff; /* Accent color */
+    color: #222; /* Contrast text color */
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.socials a:hover {
+    background-color: #c39bd3;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Contact Form (Optional) */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #888;
+}
+
+.contact-form button {
+    background-color: #f7c6ff;
+    color: #222;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #c39bd3;
+}
+/* Base Background */
+body {
+    background: linear-gradient(135deg, #3b1d47, #4e2745, #613440);
+    background-size: cover;
+    color: #f8e2cf;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Required for sticker positioning */
+}
+
+body {
+    background: linear-gradient(135deg, #3b1d47, #4e2745, #613440);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Sticker Styling */
+.sticker {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8; /* Subtle transparency */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sticker:hover {
+    transform: scale(1.1) rotate(10deg); /* Slight interaction effect */
+    opacity: 1; /* Fully visible on hover */
+}
+
+/* Sticker Placements */
+.sticker-1 {
+    top: 20px;
+    left: 30px;
+    width: 80px;
+}
+
+.sticker-2 {
+    top: 150px;
+    right: 50px;
+    width: 100px;
+}
+
+.sticker-3 {
+    bottom: 100px;
+    left: 70px;
+    width: 90px;
+}
+
+.sticker-4 {
+    bottom: 30px;
+    right: 120px;
+    width: 120px;
+}
+
+/* Middle Stickers */
+.sticker-5 {
+    top: 50%;
+    left: 40%;
+    width: 100px;
+    transform: translate(-50%, -50%); /* Center alignment effect */
+}
+
+.sticker-6 {
+    top: 55%;
+    right: 45%;
+    width: 110px;
+    transform: translate(50%, -50%);
+}
+footer {
+    background: #2c2c2c; /* Dark background to contrast with text */
+    color: #f8e2cf; /* Light color for text to maintain readability */
+    padding: 20px 0; /* Padding around the content */
+    text-align: center; /* Center-align the footer content */
+    position: relative; /* Ensure it stays at the bottom */
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center content */
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem; /* Adjust the font size */
+    font-weight: normal;
+}
+
+footer .socials {
+    margin-top: 10px;
+}
+
+footer .socials a {
+    color: #f8e2cf; /* Light color for the links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Add space between links */
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+footer .socials a:hover {
+    color: #ff9f00; /* Change color on hover */
+}
+
+/* General body styling */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100%;
+}
+
+
+header {
+    background-color: #2f2e41;  
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+
+nav ul li a {
+    color: #f8e2cf;
+    text-decoration: none;
+    font-weight: bold; 
+    text-transform: uppercase;
+    font-size: 1rem; 
+}
+
+nav ul li a:hover {
+    color: #b59f9f;
+}
+
+header nav ul li a:hover {
+    color: #b59f9f;
+}
+
+
+/* Portfolio Section */
+#portfolio {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 2rem;
+    color: #2f2e41;
+    margin-bottom: 20px;
+}
+
+#portfolio p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ensure it takes up full width within grid cell */
+    padding-bottom: 100%; /* This makes the height 100% of the width, maintaining a square ratio */
+    background-color: #f3f3f3; /* Optional background if image fails to load */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img {
+    position: absolute; /* Ensures the image fills the entire container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the square area without distortion */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover for the container */
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .portfolio-gallery {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    #portfolio h2 {
+        font-size: 1.5rem;
+    }
+
+    #portfolio p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .portfolio-gallery {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+}
+
+.slogan {
+    font-size: 48px; /* Make the text much bigger */
+    font-weight: bold; /* Make the text bold */
+    color: #2c3e50; /* Dark color (you can also use 'black' or any other dark color) */
+    line-height: 1.5; /* Optional: Adjust line spacing */
+}
+/* Certificates Section Styling */
+#certificates {
+    padding: 50px 0;
+    background-color: #e5c7c2;
+    text-align: center;
+}
+
+#certificates h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#certificates .slogan {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+/* Certificate Gallery Styling */
+.certificate-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Certificate Item Styling */
+.certificate-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+.certificate-item img {
+    width: 100%;
+    height: auto; /* Maintains image aspect ratio */
+    max-height: 200px; /* Limiting the height of the certificate image */
+    object-fit: contain; /* Ensure the image is contained within the space */
+    transition: transform 0.3s ease;
+}
+
+.certificate-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+    text-transform: capitalize;
+}
+
+/* Hover Effect for Certificates */
+.certificate-item:hover img {
+    transform: scale(1.05);  /* Slight zoom effect on hover */
+}
